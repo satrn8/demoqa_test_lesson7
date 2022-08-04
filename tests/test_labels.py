@@ -2,6 +2,10 @@ import allure
 from allure_commons.types import Severity
 
 
+def test_no_labels():
+    pass
+
+
 def test_dynamic_labels():
     allure.dynamic.tag("web")
     allure.dynamic.severity(Severity.BLOCKER)
@@ -19,12 +23,3 @@ def test_dynamic_labels():
 @allure.link("https://github.com", name="Testing")
 def test_decorator_labels():
     pass
-
-
-
-
-
-
-
-#  allure serve tests\allure-results
-
